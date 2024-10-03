@@ -8,11 +8,20 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "build": "pkg ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/quandohong28/cli-note.git"
+  },
+  "pkg": {
+    "targets": [
+      "node18-linux-x64",
+      "node18-macos-x64",
+      "node18-win-x64"
+    ],
+    "output": "dist/note"
   },
   "keywords": [
     "cli-note",
