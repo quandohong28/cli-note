@@ -1,0 +1,42 @@
+{
+  "name": "cli-note",
+  "version": "1.0.0-beta",
+  "description": "This is cli note! Composed by quandohong28 ;)",
+  "main": "src/index.js",
+  "bin": {
+    "note": "src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quandohong28/cli-note.git"
+  },
+  "keywords": [
+    "cli-note",
+    "note",
+    "quandohong28",
+    "figlet",
+    "chalk",
+    "commander",
+    "fs-extra",
+    "inquirer",
+    "ora"
+  ],
+  "author": "quandohong28",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quandohong28/cli-note/issues"
+  },
+  "homepage": "https://github.com/quandohong28/cli-note#readme",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "figlet": "^1.7.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^11.1.0",
+    "ora": "^8.1.0"
+  }
+}

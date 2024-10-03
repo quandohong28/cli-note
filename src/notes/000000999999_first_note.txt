@@ -1,0 +1,7 @@
+Xin chào! Nội dung của ghi chú sẽ hiển thị như này.
+Chúc bạn có một ngày mới tốt lành với cli-note!
+
+** **
+
+Hi there! The note content will look like this.
+Have a good day with cli-note!

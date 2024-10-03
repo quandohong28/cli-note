@@ -1,0 +1,66 @@
+0. Giới thiệu
+- Ở bài học này chúng ta sẽ tạo ra một dự án quản lý ghi chú
+- Chạy với command line interface
+- Sử dụng các thư viện đã được học
+
+1. Phân tích yêu cầu hệ thống
+- Là một ứng dụng ghi chú CLI
+- Có các chức năng xem, thêm, sửa, xoá (CRUD) ghi chú
+- Danh sách ghi chú được lưu trong một file db.json duy nhất
+- Các file ghi chú được lưu trong file txt, đặt ở thư mục ghi chú
+- Sử dụng javascript và các thư viện
+
+1. User flow
+- Truy cập vào hệ thống với thông báo chào mừng, hiển thị ra các menu cho người dùng lựa chọn
+    + Thêm ghi chú mới
+    + Hiển thị danh sách ghi chú
+    + Xem chi tiết một ghi chú
+    + Sửa ghi chú
+    + Xoá ghi chú (xoá mềm)
+    + Xem danh sách ghi chú trong thùng rác
+    + Xoá vĩnh viễn ghi chú
+    + Khôi phục ghi chú
+
+- Điều khiển ứng dụng với phong cách dùng bàn phím: dùng các mũi tên
+- Điều khiển ứng dụng với phong cách gõ câu lệnh
+
+- Hiển thị thông báo thành công hay lỗi khi crud
+
+- Kiểm tra phiên bản ghi chú hiện tại
+- Khôi phục ứng dụng ghi chú về nguyên bản
+- Backup và khôi phục dữ liệu ứng dụng
+- Thoát ứng dụng
+
+- Yêu cầu cơ bản
++ Các file phải được validate: file có tồn tại hay không -> try-catch các file cho đúng
++ Sử dụng asycn await để thực hiện các hàm bất đồng bộ -> dùng ora trong lúc chờ đợi
++ Xây dựng các hàm dùng chung để giảm thiểu và tối ưu hoá code
++ Không dùng chatgpt trừ khi lỗi không biết
++ Tạo ra hàm để đặt tên cho ghi chú: datetime_title_snake_case.txt
++ Dùng github để quản lý source code
+
+- Data model
+    + app: name, version, description
+    + user: fullname
+    + note: id, title, content, created_at, updated_at, deleted_at, filename
+
+- Danh sách thư viện
+    + chalk: ^5.3.0,
+    + commander: ^12.1.0,
+    + figlet: ^1.7.0,
+    + fs-extra: ^11.2.0,
+    + inquirer: ^11.0.2,
+    + ora: ^8.1.0
+
+- Cấu trúc thư mục
+    - / (root)
+        - src
+            - notes
+            - 000000999999_first_note.txt
+            - trashes
+                - 000000888888_help_me.txt
+        - index.js
+        - db.json
+        - package.json
+        - package-lock.json
+        - readme.md
